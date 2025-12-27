@@ -13,7 +13,7 @@ class StoryGenerator:
     @classmethod
     def _get_llm(cls) -> ChatGroq:
         return ChatGroq(
-            model="llama-3.1-8b-instant",
+            model=settings.GROP_MODEL,
             temperature = 0.1,
             api_key = settings.GROQ_API_KEY
         )
