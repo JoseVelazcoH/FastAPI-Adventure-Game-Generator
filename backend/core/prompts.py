@@ -25,7 +25,7 @@ STORY_PROMPT = """
         {format_instructions}
 
         CRITICAL:
-        - Keep it SIMPLE - only 3 total nodes (1 root + 2 endings)
+        - The story should be 4 levels deep (including root node)
         - Output ONLY valid JSON matching the exact structure specified
         - Include ALL required fields for every node
         - Do NOT add explanatory text before or after the JSON
