@@ -9,7 +9,7 @@ class Settings(BaseSettings):
     API_PREFIX: str
     DEBUG:bool = False
     ALLOWED_ORIGINS: str = ""
-    OPENAI_API_KEY: str = ""
+    GROQ_API_KEY: str = ""
 
     @field_validator("ALLOWED_ORIGINS")
     def split_allowed_origins(cls, v: str) -> List[str]:
